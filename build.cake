@@ -1,5 +1,5 @@
 Task("Restore")
-    .Does(() => DotNetBuild("src"));
+    .Does(()=>DotNetRestore("src"));
 
 Task("Build")
     .IsDependentOn("Restore")
